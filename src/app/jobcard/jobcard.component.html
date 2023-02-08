@@ -1,0 +1,21 @@
+<div>
+    <input type="search" placeholder="Searchbar" >
+</div>
+
+
+
+<div class="container row ">
+    <div class="  card  " style="width: 18rem;" *ngFor="let t of elements">
+        <img src="{{t.image}}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{t.jobname}}</h5>
+            <p class="card-text">{{t.description}}</p>
+            <h5 class="card-title">{{t.title}}</h5>
+            <p class="card-text">{{t.price}}</p>
+            <a href="jobview/{{t.jobname}}" class="btn btn-primary" >View Details</a>
+            <!-- <a href="jobview/{{t.jobname}}" class="btn btn-primary" (click)="view(t.jobname)">View Details</a> -->
+        </div>
+    </div>
+
+</div>
